@@ -1,0 +1,124 @@
+@import "mirotone/dist/styles.css";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-color: #eee;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+}
+
+body {
+  height: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 580px;
+  margin: 0 auto;
+  background-color: var(--indigo50);
+  padding: var(--space-xxxlarge);
+  border-radius: var(--border-radius-xlarge);
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  text-decoration: none;
+}
+.card-media {
+  border-radius: 25px;
+  border: 2px solid #c0312c;
+  padding: 20px;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  background: #632801;
+  }
+  .tall-card
+  {
+      font-size:10px;
+      height: 300px; 
+  }
+  .taller-box
+  {
+      height: 600px !important;
+  }
+ 
+
+  .button-style {
+      align-items: center;
+      background-clip: padding-box;
+      background-color: #fa6400;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size:12px;
+      font-weight: 600;
+      justify-content: center;
+     
+      margin: 0;
+      height:2.0rem;
+      min-height: 1.5rem;
+      padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+      
+      position: relative;
+      text-decoration: none;
+      transition: all 250ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      width: auto;
+      }
+      .bad-button
+      {
+          background-color: #c0312c;;
+      }
+      h2{
+          color: whitesmoke;  
+          
+          font-family: 'Bowlby One SC', cursive;
+      }
+      h3, p{
+          color: whitesmoke;                    
+      }
+      p{
+          
+          padding: 8px;
+      }
+      div.scroll {
+  margin:4px, 4px;
+  padding:4px;
+ 
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  width: 300px;
+}
+.readme
+{
+  
+  height: 200px;
+  background-color: black;
+}
+.hide {
+  display: none !important;
+}
