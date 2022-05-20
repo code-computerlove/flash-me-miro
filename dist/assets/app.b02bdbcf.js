@@ -1,0 +1,1 @@
+import"./style.7f2dd081.js";const{board:t}=window.miro;let i="Hello, World!";async function e(){miro.board.ui.on("drop",async({x:n,y:r,target:a})=>{const o=await t.createStickyNote({content:i});await t.viewport.zoomTo(o)})}e();

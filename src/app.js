@@ -3,7 +3,7 @@ const { board } = window.miro;
 
 let currentText = "Hello, World!";
 async function init() {
-  miro.board.ui.on("drop", ({x, y, target}) => {
+  miro.board.ui.on("drop", async ({x, y, target}) => {
   // event handler calls a function when the dragged item panel is dropped on the board
   const stickyNote = await board.createStickyNote({
     content: currentText,
@@ -15,7 +15,7 @@ async function init() {
 }
 
 
-async function changeModalText()
+async function changeModalTextDefault()
 {
   let defaultSet = getDefaultSet();
   changeModalText(defaultSet)
