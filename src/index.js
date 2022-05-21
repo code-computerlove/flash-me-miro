@@ -1,15 +1,19 @@
 const { board } = window.miro;
 
 
-
+console.log("index.js loaded");
 
 async function init() {
-  await board.ui.on("icon:click", async () => {
-    await board.ui.openPanel({ pageUrl: "app.html" });
-  });
+  await openSideBar();
 }
 
-
-
+async function openSideBar()
+{
+  await miro.board.ui.openPanel({
+    url: 'app.html',
+    //height: 400,
+  });
+}
+openSideBar();
 
 init();

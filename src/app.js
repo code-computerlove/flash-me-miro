@@ -1,30 +1,35 @@
 const { board } = window.miro;
 
+console.log("app.js loaded");
 
 let currentText = "Hello, World!";
 async function init() {
   miro.board.ui.on("drop", async ({x, y, target}) => {
-  // event handler calls a function when the dragged item panel is dropped on the board
-  const stickyNote = await board.createStickyNote({
-    content: currentText,
-  });
-
-  await board.viewport.zoomTo(stickyNote);
+  let note = createCard(currentText);
+  await board.viewport.zoomTo(note);
 });
 
 }
-
-
-async function changeModalTextDefault()
+async function createCard(text)
+{
+  // event handler calls a function when the dragged item panel is dropped on the board
+  return await board.createStickyNote({
+    content: text,
+  });
+}
+ 
+function changeModalTextDefault()
 {
   let defaultSet = getDefaultSet();
-  changeModalText(defaultSet)
+  changeModalText(defaultSet);
 }
-async function changeModalText(array)
+function changeModalText(array)
 {
     //pick one        
     currentText = array[Math.floor(Math.random() * array.length)];
+    console.log(currentText);
     document.getElementById("qtext").innerHTML = currentText;
+    
 }
 
 function getDefaultSet()

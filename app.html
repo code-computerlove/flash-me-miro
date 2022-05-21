@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/assets/style.css" />
     <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
+  
   </head>
   <body>
     <div class="grid wrapper">
-      <div class="cs1 ce12">
-        <img src="/src/assets/congratulations.png" />
-      </div>
+ 
 
-      <div class="cs1 ce12">
-       <h1>Actual app</h1>
+      <div class="cs1 ce12">    
         <button onclick="changeModalTextDefault()" class="button-style">Change this card text here (MediaCom):</button>            
           <div id = "card" class="card-media miro-draggable">
             <svg height="30" width="30">
@@ -23,25 +21,10 @@
             <p>Drag Me!</p>
         </div>
       </div>
+      <button onclick="createWholeDeck()" class="button-style">Put all on the board!</button> 
 
-      <div class="cs1 ce12">
-        <h1>Congratulations!</h1>
-        <p>You've just created your first Miro app!</p>
-        <p>
-          To explore more and build your own app, see the Miro Developer
-          Platform documentation.
-        </p>
-      </div>
-      <div class="cs1 ce12">
-        <a
-          class="button button-primary"
-          target="_blank"
-          href="https://miro-ea.readme.io/docs"
-        >
-          Read the documentation
-        </a>
-      </div>
     </div>
+    
     <script type="module" src="/src/app.js"></script>
   </body>
 </html>
