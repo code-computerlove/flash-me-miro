@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <script src="https://miro.com/app/static/sdk/v2/miro.js"></script>
-    <script type="module" crossorigin src="/assets/app.b02bdbcf.js"></script>
+    
+   
+    <script type="module" crossorigin src="/assets/app.d68417c1.js"></script>
     <link rel="modulepreload" href="/assets/style.7f2dd081.js">
-    <link rel="stylesheet" href="/assets/style.7ac2250e.css">
+    <link rel="stylesheet" href="/assets/style.ca7a1dff.css">
   </head>
   <body>
-    <div class="grid wrapper">
+   
  
-
-      <div class="cs1 ce12">
-       <h1>Actual app</h1>
+       <!--why no preview? https://developers.miro.com/docs/add-drag-and-drop-to-your-app--> 
+    
         <button onclick="changeModalTextDefault()" class="button-style">Change this card text here (MediaCom):</button>            
           <div id = "card" class="card-media miro-draggable">
             <svg height="30" width="30">
                 <circle cx="12" cy="12" r="9" fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2"/>
                
-            </svg> 
-            <p>Drag Me!</p>
+            </svg>
+            <h3 id="qtext"></h3> 
+           
         </div>
-      </div>
+      
       <button onclick="createWholeDeck()" class="button-style">Put all on the board!</button> 
 
-    </div>
+   
     
   </body>
 </html>

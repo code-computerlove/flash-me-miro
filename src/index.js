@@ -5,6 +5,7 @@ console.log("index.js loaded");
 
 async function init() {
   await openSideBar();
+  
 }
 
 async function openSideBar()
@@ -14,6 +15,6 @@ async function openSideBar()
     //height: 400,
   });
 }
-openSideBar();
+
 
 init();
